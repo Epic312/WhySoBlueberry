@@ -3,11 +3,9 @@ buildscript {
         maven { url = 'https://files.minecraftforge.net/maven' }
         jcenter()
         mavenCentral()
-        maven { url = 'https://dist.creeper.host/Sponge/maven' }
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
-        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
     }
 }
 plugins {
@@ -17,7 +15,6 @@ apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
-apply plugin: 'org.spongepowered.mixin'
 
 version = '1.0.0'
 group = 'com.evoslab.why_so_blueberry' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -92,6 +89,21 @@ minecraft {
     }
 }
 
+// Example for how to get properties into the manifest for reading by the runtime..
+jar {
+    manifest {
+        attributes([
+                "Specification-Title": "Why So Blueberry",
+                "Specification-Vendor": "Evo's Lab",
+                "Specification-Version": "1", // We are version 1 of ourselves
+                "Implementation-Title": project.name,
+                "Implementation-Version": "${version}",
+                "Implementation-Vendor" :"Evo's Lab",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
 dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
@@ -116,24 +128,9 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    compile fg.deobf("curse.maven:abnormals-core:3072976")
-    compile fg.deobf("curse.maven:neapolitan:3065225")
-    compile fg.deobf("curse.maven:jei:2995910")
-    compile fg.deobf("curse.maven:quark:3072823")
-    compile fg.deobf("curse.maven:autoreglib:3017289")
-}
-
-// Example for how to get properties into the manifest for reading by the runtime..
-jar {
-    manifest {
-        attributes([
-            "Specification-Title": "Why So Blueberry",
-            "Specification-Vendor": "Evo's Lab",
-            "Specification-Version": "1", // We are version 1 of ourselves
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"Evo's Lab",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
-        ])
-    }
+    implementation fg.deobf("curse.maven:abnormals-core:3043251")
+    implementation fg.deobf("curse.maven:neapolitan:3039521")
+    implementation fg.deobf("curse.maven:jei:2995910")
+    implementation fg.deobf("curse.maven:quark:3072823")
+    implementation fg.deobf("curse.maven:autoreglib:3017289")
 }
