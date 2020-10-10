@@ -1,6 +1,7 @@
-package com.evoslab.why_so_blueberry.registry;
+package com.evoslab.why_so_blueberry.core.registry;
 
-import com.evoslab.why_so_blueberry.WhySoBlueberry;
+import com.evoslab.why_so_blueberry.common.block.BlueberryBushBlock;
+import com.evoslab.why_so_blueberry.core.WhySoBlueberry;
 import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -20,6 +21,8 @@ public class WhySoBlueberryBlocks {
     //TODO: Blueberry cake
 
     public static final RegistryObject<Block> BLUEBERRY_ICE_CREAM_BLOCK = HELPER.createBlock("blueberry_ice_cream_block", ()->new Block(Properties.BLUEBERRY_ICE_CREAM_BLOCK), ItemGroup.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> BLUEBERRY_BUSH = HELPER.createBlockNoItem("blueberry_bush", ()->new BlueberryBushBlock(Properties.BLUEBERRY_BUSH));
 
     public static final RegistryObject<Block> BLUEBERRY_BASKET = HELPER.createCompatBlock("quark", "blueberry_basket", ()->new Block(Properties.BLUEBERRY_BASKET), ItemGroup.DECORATIONS);
     public static final RegistryObject<Block> PINK_BLUEBERRY_BASKET = HELPER.createCompatBlock("quark", "pink_blueberry_basket", ()->new Block(Properties.PINK_BLUEBERRY_BASKET), ItemGroup.DECORATIONS);

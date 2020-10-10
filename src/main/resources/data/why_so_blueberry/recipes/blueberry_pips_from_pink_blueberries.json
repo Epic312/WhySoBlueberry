@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "why_so_blueberry:pink_blueberries"
+    }
+  ],
+  "result": {
+    "item": "why_so_blueberry:blueberry_pips",
+    "count": 4
+  }
+}

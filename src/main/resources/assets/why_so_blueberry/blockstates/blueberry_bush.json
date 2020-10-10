@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "age=0":  { "model": "why_so_blueberry:block/blueberry_bush_stage0" },
+    "age=1":  { "model": "why_so_blueberry:block/blueberry_bush_stage1" },
+    "age=2":  { "model": "why_so_blueberry:block/blueberry_bush_stage2" },
+    "age=3":  { "model": "why_so_blueberry:block/blueberry_bush_stage3" },
+    "age=4,type=none":  { "model": "why_so_blueberry:block/blueberry_bush_stage4_blue" },
+    "age=4,type=blue":  { "model": "why_so_blueberry:block/blueberry_bush_stage4_blue" },
+    "age=4,type=pink":  { "model": "why_so_blueberry:block/blueberry_bush_stage4_pink" },
+    "age=5,type=none":  { "model": "why_so_blueberry:block/blueberry_bush_stage5_blue" },
+    "age=5,type=blue":  { "model": "why_so_blueberry:block/blueberry_bush_stage5_blue" },
+    "age=5,type=pink":  { "model": "why_so_blueberry:block/blueberry_bush_stage5_pink" }
+  }
+}
