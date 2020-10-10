@@ -1,0 +1,10 @@
+{
+  "parent": "block/cake_slice1",
+  "textures": {
+    "particle": "why_so_blueberry:block/blueberry_cake_side",
+    "bottom": "why_so_blueberry:block/blueberry_cake_bottom",
+    "top": "why_so_blueberry:block/blueberry_cake_top",
+    "side": "why_so_blueberry:block/blueberry_cake_side",
+    "inside": "why_so_blueberry:block/blueberry_cake_inner"
+  }
+}

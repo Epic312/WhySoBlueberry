@@ -20,6 +20,8 @@ public class WhySoBlueberryItems {
     public static final RegistryObject<Item> BLUEBERRY_PIE = HELPER.createItem("blueberry_pie", ()->new Item(new Item.Properties().food(Foods.BLUEBERRY_PIE).group(ItemGroup.FOOD)));
     public static final RegistryObject<Item> BLUEBERRY_TURNOVERS = HELPER.createItem("blueberry_turnovers", ()->new Item(new Item.Properties().food(Foods.BLUEBERRY_TURNOVERS).group(ItemGroup.FOOD)));
 
+    public static final RegistryObject<Item> BLUEBERRY_CAKE = HELPER.createItem("blueberry_cake", ()->new BlockItem(WhySoBlueberryBlocks.BLUEBERRY_CAKE.get(), new Item.Properties().group(ItemGroup.FOOD).maxStackSize(1)));
+
     public static final RegistryObject<Item> PINK_BLUEBERRIES = HELPER.createItem("pink_blueberries", ()->new Item(new Item.Properties().food(Foods.PINK_BLUEBERRIES).group(ItemGroup.FOOD)));
 
     static class Foods {
@@ -31,5 +33,7 @@ public class WhySoBlueberryItems {
         public static final Food BLUEBERRY_MUFFIN = new Food.Builder().hunger(5).saturation(0.04F).build();
         public static final Food BLUEBERRY_PIE = new Food.Builder().hunger(4).saturation(0.6F).build();
         public static final Food BLUEBERRY_TURNOVERS = new Food.Builder().hunger(5).saturation(0.03F).build();
+
+        public static final Food BLUEBERRY_CAKE = (new Food.Builder()).hunger(1).saturation(0.1F).build();
     }
 }
