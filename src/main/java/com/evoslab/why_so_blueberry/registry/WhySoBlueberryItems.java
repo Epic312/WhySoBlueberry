@@ -1,10 +1,9 @@
 package com.evoslab.why_so_blueberry.registry;
 
 import com.evoslab.why_so_blueberry.WhySoBlueberry;
+import com.minecraftabnormals.neapolitan.common.item.MilkshakeItem;
 import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 
@@ -14,6 +13,8 @@ public class WhySoBlueberryItems {
 
     //public static final RegistryObject<Item> BLUEBERRY_PIPS =
     public static final RegistryObject<Item> BLUEBERRIES = HELPER.createItem("blueberries", ()->new Item(new Item.Properties().food(Foods.BLUEBERRIES).group(ItemGroup.FOOD)));
+    public static final RegistryObject<Item> BLUEBERRY_ICE_CREAM = HELPER.createItem("blueberry_ice_cream", ()->new SoupItem(new Item.Properties().food(Foods.BLUEBERRY_ICE_CREAM).containerItem(Items.BOWL).maxStackSize(1).group(ItemGroup.FOOD)));
+    public static final RegistryObject<Item> BLUEBERRY_MILKSHAKE = HELPER.createItem("blueberry_milkshake", ()->new MilkshakeItem(null, new Item.Properties().food(Foods.BLUEBERRY_MILKSHAKE).maxStackSize(16).group(ItemGroup.FOOD)));
 
     public static final RegistryObject<Item> PINK_BLUEBERRIES = HELPER.createItem("pink_blueberries", ()->new Item(new Item.Properties().food(Foods.PINK_BLUEBERRIES).group(ItemGroup.FOOD)));
 

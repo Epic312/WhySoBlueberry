@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "why_so_blueberry:blueberries"
+    }
+  },
+  "result": {
+    "item": "why_so_blueberry:blueberry_basket",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "berry_sack"
+    }
+  ]
+}
