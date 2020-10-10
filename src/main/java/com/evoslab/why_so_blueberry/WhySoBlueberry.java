@@ -26,7 +26,7 @@ import static com.evoslab.why_so_blueberry.WhySoBlueberry.MODID;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("why_so_blueberry")
-@Mod.EventBusSubscriber(modid = MODID)
+@Mod.EventBusSubscriber(modid = "why_so_blueberry")
 @SuppressWarnings("deprecation")
 public class WhySoBlueberry
 {
