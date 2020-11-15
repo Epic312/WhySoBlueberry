@@ -1,6 +1,7 @@
 package com.evoslab.why_so_blueberry.core.registry;
 
 import com.evoslab.why_so_blueberry.common.block.BlueberryBushBlock;
+import com.evoslab.why_so_blueberry.common.block.BlueberryCakeBlock;
 import com.evoslab.why_so_blueberry.core.WhySoBlueberry;
 import com.minecraftabnormals.neapolitan.common.block.FlavoredCakeBlock;
 import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
@@ -25,7 +26,7 @@ public class WhySoBlueberryBlocks {
 
     public static final RegistryObject<Block> BLUEBERRY_BUSH = HELPER.createBlockNoItem("blueberry_bush", ()->new BlueberryBushBlock(Properties.BLUEBERRY_BUSH));
 
-    public static final RegistryObject<Block> BLUEBERRY_CAKE = HELPER.createBlockNoItem("blueberry_cake", ()->new FlavoredCakeBlock(WhySoBlueberryItems.Foods.BLUEBERRY_CAKE, null, Properties.BLUEBERRY_CAKE));
+    public static final RegistryObject<Block> BLUEBERRY_CAKE = HELPER.createBlockNoItem("blueberry_cake", ()->new BlueberryCakeBlock(WhySoBlueberryItems.Foods.BLUEBERRY_CAKE, Properties.BLUEBERRY_CAKE));
 
     public static final RegistryObject<Block> BLUEBERRY_BASKET = HELPER.createCompatBlock("quark", "blueberry_basket", ()->new Block(Properties.BLUEBERRY_BASKET), ItemGroup.DECORATIONS);
     public static final RegistryObject<Block> PINK_BLUEBERRY_BASKET = HELPER.createCompatBlock("quark", "pink_blueberry_basket", ()->new Block(Properties.PINK_BLUEBERRY_BASKET), ItemGroup.DECORATIONS);

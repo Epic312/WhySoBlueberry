@@ -1,5 +1,6 @@
 package com.evoslab.why_so_blueberry.core.registry;
 
+import com.evoslab.why_so_blueberry.common.item.BlueberryMilkshakeItem;
 import com.evoslab.why_so_blueberry.core.WhySoBlueberry;
 import com.evoslab.why_so_blueberry.core.registry.WhySoBlueberryBlocks;
 import com.minecraftabnormals.neapolitan.common.item.MilkshakeItem;
@@ -15,7 +16,7 @@ public class WhySoBlueberryItems {
     public static final RegistryObject<Item> BLUEBERRY_PIPS = HELPER.createItem("blueberry_pips", ()->new BlockNamedItem(WhySoBlueberryBlocks.BLUEBERRY_BUSH.get(), new Item.Properties().group(ItemGroup.MISC)));
     public static final RegistryObject<Item> BLUEBERRIES = HELPER.createItem("blueberries", ()->new Item(new Item.Properties().food(Foods.BLUEBERRIES).group(ItemGroup.FOOD)));
     public static final RegistryObject<Item> BLUEBERRY_ICE_CREAM = HELPER.createItem("blueberry_ice_cream", ()->new SoupItem(new Item.Properties().food(Foods.BLUEBERRY_ICE_CREAM).containerItem(Items.BOWL).maxStackSize(1).group(ItemGroup.FOOD)));
-    public static final RegistryObject<Item> BLUEBERRY_MILKSHAKE = HELPER.createItem("blueberry_milkshake", ()->new MilkshakeItem(null, new Item.Properties().food(Foods.BLUEBERRY_MILKSHAKE).maxStackSize(16).group(ItemGroup.FOOD)));
+    public static final RegistryObject<Item> BLUEBERRY_MILKSHAKE = HELPER.createItem("blueberry_milkshake", ()->new BlueberryMilkshakeItem(new Item.Properties().food(Foods.BLUEBERRY_MILKSHAKE).maxStackSize(16).group(ItemGroup.FOOD)));
     public static final RegistryObject<Item> BLUEBERRY_MUFFIN = HELPER.createItem("blueberry_muffin", ()->new Item(new Item.Properties().food(Foods.BLUEBERRY_MUFFIN).group(ItemGroup.FOOD)));
     public static final RegistryObject<Item> BLUEBERRY_PIE = HELPER.createItem("blueberry_pie", ()->new Item(new Item.Properties().food(Foods.BLUEBERRY_PIE).group(ItemGroup.FOOD)));
     public static final RegistryObject<Item> BLUEBERRY_TURNOVERS = HELPER.createItem("blueberry_turnovers", ()->new Item(new Item.Properties().food(Foods.BLUEBERRY_TURNOVERS).group(ItemGroup.FOOD)));
