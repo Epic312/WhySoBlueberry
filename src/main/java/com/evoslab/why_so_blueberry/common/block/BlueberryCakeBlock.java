@@ -51,10 +51,10 @@ public class BlueberryCakeBlock extends CakeBlock {
 
             BlueberryMilkshakeItem.doEffect(player);
 
-            Iterator var10 = this.food.getEffects().iterator();
+            Iterator effectIter = this.food.getEffects().iterator();
 
-            while(var10.hasNext()) {
-                Pair<EffectInstance, Float> pair = (Pair)var10.next();
+            while(effectIter.hasNext()) {
+                Pair<EffectInstance, Float> pair = (Pair)effectIter.next();
                 if (!world.isRemote() && pair.getFirst() != null && world.getRandom().nextFloat() < (Float)pair.getSecond()) {
                     player.addPotionEffect(new EffectInstance((EffectInstance)pair.getFirst()));
                 }
