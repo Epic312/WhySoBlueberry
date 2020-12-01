@@ -1,6 +1,7 @@
 package com.evoslab.why_so_blueberry.core;
 
 import com.evoslab.why_so_blueberry.core.other.WhySoBlueberryCompat;
+import com.evoslab.why_so_blueberry.core.registry.WhySoBlueberryEffects;
 import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,6 +27,8 @@ public class WhySoBlueberry
 
         REGISTRY_HELPER.getDeferredBlockRegister().register(eventBus);
         REGISTRY_HELPER.getDeferredItemRegister().register(eventBus);
+
+        WhySoBlueberryEffects.EFFECTS.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
