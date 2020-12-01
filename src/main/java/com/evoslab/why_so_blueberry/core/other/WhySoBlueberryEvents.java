@@ -19,7 +19,7 @@ public class WhySoBlueberryEvents {
             Entity entity = event.getEntity();
             PlayerEntity target = entity.getEntityWorld().getClosestPlayer(entity, 3.0D);
             if (target != null && target.getActivePotionEffect(WhySoBlueberryEffects.BLUEBERRY.get()) != null) {
-                entity.setVelocity(entity.getMotion().x * -1.0D, entity.getMotion().y * -1.0D, entity.getMotion().z * -1.0D);
+                entity.setMotion(entity.getMotion().mul(-1.0D, -1.0D, -1.0D));
                 if (entity instanceof DamagingProjectileEntity) {
                     ((DamagingProjectileEntity) entity).accelerationX*=-1.0;
                     ((DamagingProjectileEntity) entity).accelerationY*=-1.0;
