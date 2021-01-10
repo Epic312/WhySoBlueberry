@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "why_so_blueberry:block/blueberry_bush_stage4_pink"
-  }
-}

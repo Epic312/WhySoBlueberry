@@ -1,0 +1,21 @@
+{
+  "item.canopy.blueberry_pips": "Bluebery Pips",
+  "item.canopy.blueberries": "Blueberries",
+  "block.canopy.blueberry_bush": "Blueberry Bush",
+  "block.canopy.blueberry_basket": "Blueberry Basket",
+
+  "item.canopy.blueberry_ice_cream": "Blueberry Ice Cream",
+  "item.canopy.blueberry_milkshake": "Blueberry Milkshake",
+  "block.canopy.blueberry_ice_cream_block": "Blueberry Ice Cream Block",
+
+  "item.canopy.blueberry_muffin": "Blueberry Muffin",
+  "item.canopy.blueberry_pie": "Blueberry Pie",
+  "item.canopy.blueberry_turnovers": "Blueberry Turnovers",
+
+  "block.canopy.blueberry_cake": "Blueberry Cake",
+
+  "item.canopy.pink_blueberries": "Pink Blueberries",
+  "block.canopy.pink_blueberry_basket": "Pink Blueberry Basket",
+
+  "effect.canopy.blueberry": "Blueberry"
+}

@@ -17,8 +17,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '1.0.0'
-group = 'com.evoslab.why_so_blueberry' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Why-So-Blueberry-1.16.1'
+group = 'com.evoslab.canopy' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'Canopy-1.16.4'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
@@ -29,7 +29,7 @@ minecraft {
     // stable_#            Stables are built at the discretion of the MCP team.
     // Use non-default mappings at your own risk. they may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'snapshot', version: '20200707-1.16.1'
+    mappings channel: 'snapshot', version: '20201028-1.16.3'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -49,7 +49,7 @@ minecraft {
             property 'mixin.env.disableRefMap', 'true'
 
             mods {
-                why_so_blueberry {
+                canopy {
                     source sourceSets.main
                 }
             }
@@ -67,7 +67,7 @@ minecraft {
             property 'mixin.env.disableRefMap', 'true'
 
             mods {
-                why_so_blueberry {
+                canopy {
                     source sourceSets.main
                 }
             }
@@ -82,10 +82,10 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'why_so_blueberry', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'canopy', '--all', '--output', file('src/generated/resources/')
 
             mods {
-                why_so_blueberry {
+                canopy {
                     source sourceSets.main
                 }
             }
@@ -97,7 +97,7 @@ minecraft {
 jar {
     manifest {
         attributes([
-                "Specification-Title": "Why So Blueberry",
+                "Specification-Title": "Canopy",
                 "Specification-Vendor": "Evo's Lab",
                 "Specification-Version": "1", // We are version 1 of ourselves
                 "Implementation-Title": project.name,
@@ -112,7 +112,9 @@ dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.16.1-32.0.108'
+    minecraft 'net.minecraftforge:forge:1.16.4-35.1.4'
+    implementation fg.deobf("curse.maven:abnormals-core:3157757")
+    implementation fg.deobf("curse.maven:neapolitan:3155309")
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
@@ -131,10 +133,4 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
-    implementation fg.deobf("curse.maven:abnormals-core:3072976")
-    implementation fg.deobf("curse.maven:neapolitan:3065225")
-    implementation fg.deobf("curse.maven:jei:2995910")
-    implementation fg.deobf("curse.maven:quark:3024740")
-    implementation fg.deobf("curse.maven:autoreglib:3017289")
 }
