@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "canopy:pink_blueberries"
+    }
+  ],
+  "result": {
+    "item": "canopy:blueberry_pips",
+    "count": 4
+  }
+}

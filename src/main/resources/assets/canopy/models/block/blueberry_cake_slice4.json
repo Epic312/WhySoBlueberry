@@ -1,0 +1,10 @@
+{
+  "parent": "block/cake_slice4",
+  "textures": {
+    "particle": "canopy:block/blueberry_cake_side",
+    "bottom": "canopy:block/blueberry_cake_bottom",
+    "top": "canopy:block/blueberry_cake_top",
+    "side": "canopy:block/blueberry_cake_side",
+    "inside": "canopy:block/blueberry_cake_inner"
+  }
+}

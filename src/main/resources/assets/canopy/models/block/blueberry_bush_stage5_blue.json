@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "canopy:block/blueberry_bush_stage5_blue"
+  }
+}

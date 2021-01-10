@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "neapolitan:vanilla_milkshake"
+    },
+    {
+      "tag": "forge:fruits/blueberry"
+    }
+  ],
+  "result": {
+    "item": "canopy:blueberry_milkshake",
+    "count": 1
+  }
+}
